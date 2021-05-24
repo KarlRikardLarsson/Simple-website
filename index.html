@@ -5,49 +5,80 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Lulepedia </title>
-    <link rel="stylesheet" href="../stil.css">
-    <link rel="stylesheet" href="Stil.css">
+    <link rel="stylesheet" href="stil.css">
 </head>
    
 <body>
     
-        <!--bild på logo-->
-        <img class="logo" src="../Bilder/Logo02.png"  alt="Logo för lulepedia"> 
+            <!--skapar logo-->
+        <img class="logo" src="Bilder/Logo02.png" alt="Logo för lulepedia"> 
 
     <!-- skapar ID till meny-->
 <ul id="menucontainer">
-    
-    <!--skapar logo-->
-    
+        
     
     <!--valalternativ till meny-->
-   <li><a href="../index.html">Hem</a></li>
-   <li><a href="#">Om oss</a></li>
-   <li><a href="../support/index.html">Kontakt</a></li>
+   <li><a href="#">Hem</a></li>
+   <li><a href="info/index-info.html">Om oss</a></li>
+   <li><a href="support/index-support.html">Kontakt</a></li>
 </ul>
    <!--lägger bild under meny-->
 <div class="bild">
-    <img class="bild-bild" src="../Bilder/Header00.png" alt="Header-meny bild">
+    <img class="bild-bild" src="Bilder/Header00.png"  alt="Header-meny bild.">
     </div>
     <br>
     <br>
     
-    <!--TIllbaka till startsidan knapp.-->
- <div> <a class="inlagg" href="../index.html">Till startsida</a> </div>
-        
-        <!-- flera stycken med text om hemsidan-->
-<h2>Lulepedia, för studenter av studenter</h2>
-    
-    <p>Det är väldigt frustrerande när man sitter med en uppgift i flera timmar och inte förstår varför det inte funkar. Det är skillnad från lärare till lärare, men att fråga en lärare är oftast inte det smidigaste sättet att få svar på frågor, utan det är att fråga klasskamrater eller söka upp en liknade fråga som någon har ställt på ett forum. Därav kommer idén <em>Lulepedia</em>, en plattform där man kan dela och söka information gällande sina studier. </p>
-        
-<h2> Hur funkar det?</h2>
-        <p> Lulepedia funkar som ett forum där man kan dela sina funderingar. En student gör ett inlägg med en frågeställning eller fundering angående sina studier, därefter kommer andra personer kunna kommentera på inlägget för att ge tips eller förslag relaterat till ärendet.</p>
+    <!--Länk till ny sida för att skapa ett inlägg-->
+   <div> <a class="inlagg" href="skapainlagg/index-skapainlagg.html">Skapa inlägg</a>   <input class="sok" type="text" placeholder="Search..">
+</div>
 
-<h2>Mål</h2>
-    <p>Lulepedia ska försöka göra information mer tillgängligt, det ska försöka få ihop en grupp av människor som hjälper varandra och det ska även lätta arbetet för våra lärare. Det ska helt enkelt vara som LTU’s helt egna hemsida med information som ska hjälpa studenter att nå ett godkänt betyg i sina kurser. </p>
-    
-<h2>Säkerhet</h2>
-    <p>På grund av säkerhetskäl är alla upplägg och kommentarer helt anonyma. Ingen information av en användare kommer att sparas, enbart inlägg.</p>
+
+    <!-- skapar en forumtabell där alla inlägg är-->
+<table class="forumTable">
+    <thead>
+        <tr>
+    <th>Rubrik</th>
+    <th>Datum</th>
+    <th>Ämne</th>
+    <th>Antal svar</th>
+        </tr>
+    </thead>
+    <tr>
+    <td><a href="inlagg/index-inlagg.html"> Hur skapar man en table border?</a></td>
+    <td><a href="#"> 2021-02-22</a></td>
+    <td><a href="#"> Webbutveckling</a></td>
+    <td> 10</td>
+    </tr>
+    <tr>
+    <td><a href="inlagg/index-inlagg.html"> Får inte min CSS att funka!!</a></td>
+    <td><a href="#"> 2021-02-12</a></td>
+    <td><a href="#"> Webbutveckling</a></td>
+    <td> 12</td>
+    </tr>
+    <tr>
+    <td><a href="inlagg/index-inlagg.html"> IS alignment</a></td>
+    <td><a href="#"> 2021-02-02</a></td>
+    <td><a href="#"> Verksamhetsutveckling med hjälp av IT</a></td>
+    <td> 22</td>
+    </tr>
+    <tr>
+    <td><a href="inlagg/index-inlagg.html"> uppgift 223 A</a></td>
+    <td><a href="#"> 2021-01-12</a></td>
+    <td><a href="#"> Mattematik 2</a></td>
+    <td> 2</td>
+    </tr>
+    <tr>
+    <td><a href="inlagg/index-inlagg.html"> Behöver hjälp skapa rubriker</a></td>
+    <td><a href="#"> 2021-01-01</a></td>
+    <td><a href="#"> Webbutveckling</a></td>
+    <td> 1</td>
+    </tr>
+    </table>
+
+
+
+
     
     <footer>
     <p><small> Copyright &copy; 2021 Karl Rikard Larsson</small></p></footer>
