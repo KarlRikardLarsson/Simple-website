@@ -1,0 +1,54 @@
+
+
+/* Taget från moduler "sidlayout"*/
+* {
+   box-sizing: border-box;
+}
+
+
+@media all and (max-width: 600px) {
+
+   #menucontainer {
+      flex-direction: column;
+   }
+}
+#content {
+   overflow: hidden;
+}
+
+.column {
+   float: left;
+   padding: 10px;
+}
+
+.column.left{
+   width: 25%;
+}
+
+.column.right{
+   width: 75%;
+}
+
+@media all and (max-width: 800px) {
+
+   .column.left {
+      width: 100%;
+   }
+
+   .column.right {
+      width: 100%;
+        background-color: f2f2f2;
+   }
+}
+
+/* stil för kommentera inlägg*/
+.comment{
+    
+    width: 40%
+    height: 100px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+h2{
+text-align: center;
+border-bottom: 1px solid black;}

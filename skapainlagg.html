@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Skapa inlägg </title>
+    <link rel="stylesheet" href="../stil.css">
+    <link rel="stylesheet" href="../support/design.css">
+</head>
+   
+<body>
+    
+      <!--skapar logo-->
+    <img class="logo" src="../Bilder/Logo02.png" alt="Logo för Lulepedia"> 
+    
+    <!-- skapar ID till meny-->
+<ul id="menucontainer">
+    
+  
+    
+    <!--valalternativ till meny-->
+   <li><a href="../index.html">Hem</a></li>
+   <li><a href="../info/index.html">Om oss</a></li>
+   <li><a href="../support/index.html">Kontakt</a></li>
+</ul>
+   <!--lägger bild under meny-->
+<div class="bild">
+    <img class="bild-bild" src="../Bilder/Header00.png" alt="Header-meny bild">
+    </div>
+    <br>
+    <br>
+    
+
+        <!--TIllbaka till startsidan knapp.-->
+    <div> <a class="inlagg" href="../index.html">Tillbaka</a> </div>
+
+
+        <!--Metod post, då informationen skickas.-->
+        <form  method="post">
+        
+         
+            <div class="form_titel">
+            <p>Skapa ett inlägg</p></div>
+            <hr>
+        
+
+            
+                
+        
+                
+                   <!-- skapar rullgardinsmeny för ämne.-->
+           <div class="form_meny">  <label for="kategori">Ämne:</label>
+                
+                    <br>
+                    <select class="form_input" name="kategori" id="kategori">
+                        <option >Algoritmer </option>
+                        <option >Algoritmer och datastrukturer</option>
+                        <option >Avancerad Data Mining</option>
+                        <option >Business Intelligence</option>
+                        <option >C# och Windowsbaserad applikationsutvecklin</option>
+                        <option >Data Mining</option>
+                        <option >Data Science programmering</option>
+                        <option >Databaser I</option>
+                        <option >Databaser II</option>
+                        <option >Databaser, en introduktion</option>
+                        <option >Databasteknik </option>
+                        <option >Datakommunikation i informationssystem</option>
+                        <option >Datastrukturer och algoritmer</option>
+                        <option >Datorkommunikation </option>
+                        <option >Datorspelsmotorers arkitektu</option>
+                        <option >Datorspelsproduktion  </option>
+                        <option >Design av dynamiska webbsystem </option>
+                        <option >Design av inbyggda system </option>
+                        <option >Digitalt bevarande </option>
+                        <option >Webbutveckling </option>
+                        <option >Överigt, data/IT </option>
+                        <option >Övrigt, ekonomi </option>
+                        <option >Övrigt, humaniora </option>
+                        <option >Övrigt, hälsovetenskap </option>
+                        <option >Övrigt, juridik </option>
+                        <option >Övrigt, lärande/pedagogik </option>
+                        <option >Övrigt, matematik </option>
+                        <option >Annat </option>
+                        
+                        
+
+                    </select></div>
+            
+                
+                   <!-- skapar fält för rubrik til beskrivning.-->
+            <div class="form_rub"> <label for="rubrik">Rubrik:</label><br>
+                <input type="text" class="form_input form_input_error" name="rubrik" id="rubrik">
+                            <span class="form_error">*</span></div>
+
+            
+            
+                
+                   <!-- skapar textarea för beskrivning med max 400 ord.-->
+            <div class="form_beskrivning"> <label for="rubrik">Beskrivning:</label><br><textarea  class="form_input form_input_error" name="beskrivning" rows="5" cols =50 placeholder="Beskriv ditt ärende med max 400 ord." maxlength="400"></textarea>             <span class="form_error">*</span></div>
+
+                
+            
+                
+                   <!-- Ger användaren alternativet att bifoga en fil.-->
+           <div class="form_bild"> <label>Bifoga bild <em>(frivilligt)</em> <br> 
+                <input type="file" name="foto"></label></div>
+                
+           
+            <div class="form_submit" onclick="alert('Tack för ditt inlägg, andra studenter kan nu ta del av dina funderingar!')" > <input type="submit" name ="skicka" value="Skapa inlägg"> <input type="reset" value="Ångra"></div>
+        </form>
+    
+
+
+
+    
+    <footer>
+    <p><small> Copyright &copy; 2021 Karl Rikard Larsson</small></p></footer>
+    
+</body>
+</html>

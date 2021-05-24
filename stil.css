@@ -1,0 +1,108 @@
+
+/*CSS TILL STARTSIDA -HEMSIDA*/
+
+/* backgrund fär och text-stil */
+body {
+    background-color: white;
+    margin:auto;
+    font-family: 'arial', serif;   
+}
+     /* skapar en huvudmeny */   
+#menucontainer {
+    background-color: white;
+    color: #000000;
+    list-style: none;
+    text-align: right;
+    padding: 20px 0px 0px 0px;
+    
+}
+
+#menucontainer li {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+    font-size: 12px;
+}      
+        
+#menucontainer a {
+    text-decoration: none;
+    color: #000000;
+}
+     
+#menucontainer a:hover
+{
+    color: #c1c1c1;
+}
+/* slut på huvudmeny */
+
+/*Ändrar stil på "LOGO" som visas i vänstra hörnet på hemsidan.*/
+
+.logo{
+    color: black;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    height: 10%;
+    width: 10%;
+    
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+
+/* storlek på bilden under meny*/
+.bild{
+    
+    width: 100%;
+    display: block;
+}
+.bild-bild{
+    width: 100%;
+    display: block;
+    height: 220px;
+}
+
+
+a:hover{
+    
+    font-weight: 500;
+    text-decoration: none;
+    
+}
+
+/* ändrar stil på forumtabel, dvs alla inlägg.*/
+
+.forumTable{
+    width: 100%;
+    height: auto;
+}
+
+.forumTable th, td{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+.forumTable a:hover{
+    font-weight: normal;
+}
+
+/* Ändrar stil på "skapa inlägg och gå tillbaka till startsidan knappen*/
+.inlagg{
+  background-color: #555555; 
+  border: none;
+  color: white;
+  padding: 5px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.inlagg a{
+    color: white
+}
+
+
+.sok{
+    float: right;
+}
