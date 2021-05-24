@@ -1,0 +1,91 @@
+/*DESIGN TILL SUPPORT HEMSIDA*/
+
+/* ändrar text och storlek på allt innanför formuläret.*/
+.form{
+    
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* Ändrar utseende och höjd på inmatningsrutorna i formulär*/
+.form *{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* Ändrar storlek på titel till formulär och gör texten nästan till fetstil*/
+.form_titel{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+
+
+/* Ändrar position på rutan man matar in sitt namn så den är jämns med texten ovan*/
+.form_namn > *{
+    align-self: flex-start;
+    
+}
+
+/* Ändrar font-weight + padding (space  runt elementets innehåll) på klassen jag skapat "Form_titel"*/
+.form_titel{
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+
+.form_input{
+    /*ändrar bredd till 100% samtidigt som jag sätter ett maximum på inmatningsrutan. Detta är så rutan blir snygg och tydlig på stora skärmar samtidigt som den inte för stor på små skärmar. Mobiler till exempel.*/
+    width: 100%;
+    max-width: 425px;
+    
+    /*ändrar font på texten som användaren matar in
+    Tar bort outline för snygghetensskull. Det är nästan samma sak som border, men tillhör inte box modellen.
+    Gör boder runt inmatningsrutan fet med 1px i tjocklek*/
+    font-family: sans-serif;
+    outline: none;
+    border: 1px solid #dddddd;
+    background: #f9f9f9;
+    
+}
+
+/* inmatnings rutan ändrar färg när man klickat på rutan*/
+.form_input:focus{
+    
+    background: white;
+}
+
+/* Ändrar färg på inmatningsrutan om det inte finns något värde(det görs via JS*/
+.form_input_error{
+    color: red;
+    border-color: red;
+}
+
+/*sätter 10px mellanrum från toppen av elementet. Ändrar färg och storlek på "*" + gör hidden om .form_error function() int är null med hjälp av JS.*/
+.form_error{
+    
+    padding-top: 10px;
+    color: red;
+    font-size: 0.9em;
+    visibility: hidden;
+}
+
+/*Gör error synligt om värdet är null (I java script ? =null)*/
+.form_input_error + .form_error{
+    visibility: visible;
+}
+
+/*Desgin för submit och radera knappen*/
+.form_submit{
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin: 10px 0;
+    
+    /* färg och ram runt submit och radera knapparna*/
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+

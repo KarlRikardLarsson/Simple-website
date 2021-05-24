@@ -4,84 +4,104 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Lulepedia </title>
-    <link rel="stylesheet" href="stil.css">
+    <title> Lulepedia support </title>
+    <link rel="stylesheet" href="../stil.css">
+    <link rel="stylesheet" href="design.css">
+        <script src="funktion.js"></script>
+
 </head>
    
 <body>
     
-            <!--skapar logo-->
-        <img class="logo" src="Bilder/Logo02.png" alt="Logo för lulepedia"> 
-
+     <!--skapar logo-->
+    <img class="logo" src="../Bilder/Logo02.png" alt="Logo för lulepedia"> 
+    
     <!-- skapar ID till meny-->
 <ul id="menucontainer">
-        
+    
+   
     
     <!--valalternativ till meny-->
-   <li><a href="#">Hem</a></li>
-   <li><a href="info/index.html">Om oss</a></li>
-   <li><a href="support/index.html">Kontakt</a></li>
+   <li><a href="../index.html">Hem</a></li>
+   <li><a href="../info/index.html">Om oss</a></li>
+   <li><a href="#">Kontakt</a></li>
 </ul>
    <!--lägger bild under meny-->
 <div class="bild">
-    <img class="bild-bild" src="Bilder/Header00.png"  alt="Header-meny bild.">
+    <img class="bild-bild" src="../Bilder/Header00.png" alt="Header-meny bild">
     </div>
     <br>
     <br>
+        <!--TIllbaka till startsidan knapp.-->
+         <div> <a class="inlagg" href="../index.html">Till startsida</a> </div>
+        
+        <!--action - En URL eller plats vart formuläret kommer att köras.-->
+        <form  method="post">
+        
+         
+            <div class="form_titel">
+            <p>Här kan du skicka ett ärende till våran support.</p></div>
+            
+                <!-- skapar fält för användaren att skriva in sitt namn-->
+           <div class="form_namn"> <label for="namn">Ditt namn:</label><br>
+                <input type="text" class="form_input form_input_error" name="namn" id="namn">
+            <span class="form_error">*</span></div>
+                
+                <!-- skapar fält för användaren att skriva in sitt telefonnummer-->
+            <div class="form_tlf"><label for="telefon"> Telefon:<br></label>
+                <input type="tel" class="form_input form_input_error" name ="telefon" id ="telefon">
+                            <span class="form_error">*</span></div>
+
+                
+                <!-- skapar rullgardinsmeny för prioritet.-->
+             <div class="form_prio"> <label for="prioritet">Prioritet:</label>
+                
+                    <br>
+                    <select class="form_input" name="prioritet" id="prioritet">
+                    <option value="1">Låg</option>
+                    <option value="2">Medel</option>
+                    <option value="3">Hög</option></select></div>
+            
+                
+        
+                
+                   <!-- skapar rullgardinsmeny för kategori.-->
+           <div class="form_meny">  <label for="prioritet">Kategori:</label>
+                
+                    <br>
+                    <select class="form_input" name="kategori" id="kategori">
+                    <option value="fakt">Problem med hemsidan</option>
+                    <option value="net">Feedback</option>
+                    <option value="tel">Kan inte göra inlägg</option>
+                    <option value="2epost">Övrigt</option>
+                    </select></div>
+            
+                
+                   <!-- skapar fält för rubrik til beskrivning.-->
+            <div class="form_rub"> <label for="rubrik">Rubrik:</label><br>
+                <input type="text" class="form_input form_input_error" name="rubrik" id="rubrik">
+                            <span class="form_error">*</span></div>
+
+            
+            
+                
+                   <!-- skapar textarea för beskrivning med max 400 ord.-->
+            <div class="form_beskrivning"> <label for="rubrik">Beskrivning:</label><br><textarea  class="form_input form_input_error" name="beskrivning" rows="5" cols =50 placeholder="Beskriv ditt ärende med max 400 ord." maxlength="400"></textarea>             <span class="form_error">*</span></div>
+
+                
+            
+                
+                   <!-- Ger användaren alternativet att bifoga en fil.-->
+           <div class="form_bild"> <label>Bifoga bild <em>(frivilligt)</em> <br> 
+                <input type="file" name="foto"></label></div>
+                
+           
+            <div class="form_submit" onclick="alert('Ditt ärende har blivit skickat till våran support')" > <input type="submit" name ="skicka" value="Submit"> <input type="reset" value="Reset"></div>
+        </form>
     
-    <!--Länk till ny sida för att skapa ett inlägg-->
-   <div> <a class="inlagg" href="skapainlagg/skapainlagg.html">Skapa inlägg</a>   <input class="sok" type="text" placeholder="Search..">
-</div>
-
-
-    <!-- skapar en forumtabell där alla inlägg är-->
-<table class="forumTable">
-    <thead>
-        <tr>
-    <th>Rubrik</th>
-    <th>Datum</th>
-    <th>Ämne</th>
-    <th>Antal svar</th>
-        </tr>
-    </thead>
-    <tr>
-    <td><a href="inlagg/index.html"> Hur skapar man en table border?</a></td>
-    <td><a href="#"> 2021-02-22</a></td>
-    <td><a href="#"> Webbutveckling</a></td>
-    <td> 10</td>
-    </tr>
-    <tr>
-    <td><a href="inlagg/index.html"> Får inte min CSS att funka!!</a></td>
-    <td><a href="#"> 2021-02-12</a></td>
-    <td><a href="#"> Webbutveckling</a></td>
-    <td> 12</td>
-    </tr>
-    <tr>
-    <td><a href="inlagg/index.html"> IS alignment</a></td>
-    <td><a href="#"> 2021-02-02</a></td>
-    <td><a href="#"> Verksamhetsutveckling med hjälp av IT</a></td>
-    <td> 22</td>
-    </tr>
-    <tr>
-    <td><a href="inlagg/index.html"> uppgift 223 A</a></td>
-    <td><a href="#"> 2021-01-12</a></td>
-    <td><a href="#"> Mattematik 2</a></td>
-    <td> 2</td>
-    </tr>
-    <tr>
-    <td><a href="inlagg/index.html"> Behöver hjälp skapa rubriker</a></td>
-    <td><a href="#"> 2021-01-01</a></td>
-    <td><a href="#"> Webbutveckling</a></td>
-    <td> 1</td>
-    </tr>
-    </table>
-
-
-
-
     
-    <footer>
-    <p><small> Copyright &copy; 2021 Karl Rikard Larsson</small></p></footer>
     
-</body>
+    
+    
+    </body>
 </html>
